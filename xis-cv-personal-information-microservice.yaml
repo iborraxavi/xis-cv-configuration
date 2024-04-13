@@ -1,2 +1,6 @@
 server:
   port: 80911
+
+spring:
+  application:
+    name: xis-cv-personal-information-microservice

@@ -1,6 +1,10 @@
 server:
   port: 80912
 
+spring:
+  application:
+    name: xis-cv-personal-information-microservice
+
 eureka:
   client:
     serviceUrl:
