@@ -11,3 +11,8 @@ spring:
           uri: lb://xis-cv-personal-information-microservice
           predicates:
             - Path=/xis/v1/personal-information
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
