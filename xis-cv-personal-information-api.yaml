@@ -4,3 +4,8 @@ server:
 spring:
   application:
     name: xis-cv-personal-information-microservice
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761
