@@ -8,7 +8,7 @@ spring:
     gateway:
       routes:
         - id: personal-information-service
-          uri: lb://xis-cv-personal-information-api
+          uri: lb://xis-cv-personal-information-microservice
           predicates:
             - Path=/xis/v1/personal-information/**
 
