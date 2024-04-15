@@ -10,7 +10,7 @@ spring:
         - id: personal-information-service
           uri: lb://xis-cv-personal-information-api
           predicates:
-            - Path=/xis/v1/personal-information
+            - Path=/xis/v1/personal-information/**
 
 eureka:
   client:
