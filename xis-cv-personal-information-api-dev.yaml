@@ -6,6 +6,8 @@ spring:
     name: xis-cv-personal-information-microservice
 
 eureka:
+  instance:
+    prefer-ip-address: true
   client:
     serviceUrl:
       defaultZone: http://200.234.224.203:8761/eureka/
