@@ -13,6 +13,8 @@ spring:
             - Path=/xis/v1/personal-information/**
 
 eureka:
+  instance:
+    prefer-ip-address: true
   client:
     serviceUrl:
       defaultZone: http://xis-cv-eureka-server:8761/eureka/
