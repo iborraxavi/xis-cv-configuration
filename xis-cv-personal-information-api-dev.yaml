@@ -8,9 +8,9 @@ spring:
     mongodb:
       host: 127.0.0.1
       port: 27017
-      database: admin
-      username: user
-      password: pass
+      database: XIS-CV
+      username: root
+      password: rootpassword
 
 eureka:
   instance:
