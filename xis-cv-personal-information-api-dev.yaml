@@ -8,7 +8,7 @@ spring:
     mongodb:
       # host: localhost
       # port: 27017
-      # database: XIS-CV
+      database: XIS-CV
       # username: xis-cv
       # password: xis-cv
       uri: mongodb://xis-cv:xis-cv@localhost:27017/XIS-CV?authSource=admin&retryWrites=true&w=majority
