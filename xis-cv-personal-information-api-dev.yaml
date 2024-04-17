@@ -9,8 +9,8 @@ spring:
       host: localhost
       port: 27017
       database: XIS-CV
-      username: user
-      password: pass
+      username: xis-cv
+      password: xis-cv
 
 eureka:
   instance:
