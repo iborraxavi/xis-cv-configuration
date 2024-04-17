@@ -6,12 +6,11 @@ spring:
     name: xis-cv-personal-information-microservice
   data:
     mongodb:
-      # host: localhost
-      # port: 27017
-      # database: XIS-CV
-      # username: xis-cv
-      # password: xis-cv
-      uri: mongodb://xis-cv:xis-cv@localhost:27017/XIS-CV?authSource=admin&retryWrites=true&w=majority&ssl=true
+      host: 127.0.0.1
+      port: 27017
+      database: XIS-CV
+      username: xis-cv
+      password: xis-cv
 
 eureka:
   instance:
