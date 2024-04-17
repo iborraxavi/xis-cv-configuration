@@ -4,6 +4,13 @@ server:
 spring:
   application:
     name: xis-cv-personal-information-microservice
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: XIS-CV
+      username: user
+      password: pass
 
 eureka:
   instance:
