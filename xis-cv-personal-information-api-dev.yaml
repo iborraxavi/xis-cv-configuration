@@ -6,15 +6,18 @@ spring:
     name: xis-cv-personal-information-microservice
   data:
     mongodb:
-      host: 127.0.0.1
+      host: 192.168.31.157
       port: 27017
       database: XIS-CV
-      username: root
-      password: rootpassword
+      username: username
+      password: password
+      authentication-database: admin
+  jackson:
+    date-format: yyyy-MM-dd
 
 eureka:
   instance:
     prefer-ip-address: true
   client:
     serviceUrl:
-      defaultZone: http://200.234.224.203:8761/eureka/
+      defaultZone: http://192.168.31.157:8761/eureka/
