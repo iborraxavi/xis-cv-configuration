@@ -6,7 +6,7 @@ spring:
     name: xis-cv-personal-information-microservice
   data:
     mongodb:
-      host: 192.168.31.157
+      host: 192.168.31.155
       port: 27017
       database: XIS-CV
       username: username
