@@ -19,8 +19,12 @@ spring:
   security:
     oauth2:
       resourceserver:
-          issuer-uri: http://192.168.31.155:28080/realms/master
-          jwk-set-uri: http://192.168.31.155:28080/realms/master/protocol/openid-connect/certs
+        issuer-uri: http://192.168.31.155:28080/realms/master
+        jwk-set-uri: http://192.168.31.155:28080/realms/master/protocol/openid-connect/certs
+
+logging:
+  pattern:
+    level: '%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]'
 
 eureka:
   instance:
@@ -30,6 +34,8 @@ eureka:
       defaultZone: http://192.168.31.155:8761/eureka/
 
 management:
+  security:
+    enabled: true
   endpoints:
     web:
       exposure:
