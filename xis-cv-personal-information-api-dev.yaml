@@ -4,6 +4,8 @@ server:
 spring:
   application:
     name: xis-cv-personal-information-microservice
+  main:
+    allow-bean-definition-overriding: true
   data:
     mongodb:
       host: 192.168.31.155
