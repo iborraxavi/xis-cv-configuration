@@ -14,6 +14,23 @@ spring:
       authentication-database: admin
   jackson:
     date-format: yyyy-MM-dd
+  security:
+    oauth2:
+      client:
+        provider:
+          external:
+            issuer-uri: http://192.168.31.155:28080/realms/external
+        registration:
+          external:
+            provider: external
+            client-name: external-client
+            client-id: external-client
+            client-secret: 83eevdnF1tSDQihUBW1Mt0WbsGcSDvbw
+            authorization-grant-type: client_credentials
+            scope: 
+              - openid
+              - offline_access
+              - profile
 
 eureka:
   instance:
