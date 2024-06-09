@@ -17,8 +17,8 @@ spring:
   security:
     oauth2:
       resourceserver:
-          issuer-uri: http://192.168.31.155:28080/auth/realms/master
-          jwk-set-uri: http://192.168.31.155:28080/auth/realms/master/protocol/openid-connect/certs
+          issuer-uri: http://192.168.31.155:28080/realms/master
+          jwk-set-uri: http://192.168.31.155:28080/realms/master/protocol/openid-connect/certs
 
 eureka:
   instance:
